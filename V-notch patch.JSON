@@ -1,0 +1,8 @@
+{
+    "name": "V-notch patch",
+    "description": "This patch will move the Sailfish OS clock slightly on the right so that it will be visible on V-notched devices.",
+    "category": "clock",
+    "infos": {
+        "maintainer": "minodesign® / Jolla-devices"
+    }
+}

@@ -1,0 +1,17 @@
+--- /usr/share/lipstick-jolla-home-qt5/statusarea/StatusArea.qml	2020-12-22 20:24:28.000000000 +0100
++++ /usr/share/lipstick-jolla-home-qt5/statusarea/StatusArea.qml	2020-12-22 20:42:11.000000000 +0100
+@@ -1,4 +1,4 @@
+-/****************************************************************************
++/****************************************************************************StatusArea-modified.qml
+ **
+ ** Copyright (c) 2013 - 2019 Jolla Ltd.
+ ** Copyright (c) 2019 Open Mobile Platform LLC.
+@@ -102,7 +102,7 @@
+             }
+             Loader {
+                 // If possible position this item centrally within the iconBar
+-                x: Math.max((iconBar.width - width)/2 - parent.x, 0)
++                x: (parent.width - width)/2 + width + (width /2)
+                 y: (parent.height - height)/2
+                 sourceComponent: lockscreenMode ? (Telephony.multiSimSupported ? null : operatorName) : timeText
+             }
